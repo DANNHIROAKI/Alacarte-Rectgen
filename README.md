@@ -73,6 +73,7 @@ They store **half-open** boxes:
 $$
 \text{box}_i = \prod_{k} [\text{lower}_{i,k}, \text{upper}_{i,k})
 $$
+
 Key fields/properties:
 
 - `R.lower`, `R.upper`: `np.ndarray` with shape `(n, d)`
