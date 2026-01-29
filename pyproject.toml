@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "alacarte-rectgen"  # distribution name on PyPI (pip install ...)
-version = "0.1.0"
+version = "0.1.5"
 description = "Controllable output-density synthetic axis-aligned hyper-rectangle generator"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -31,7 +31,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/DANNHIROAKI/Alacarte-Rectgen"
+Homepage = "https://dannhiroaki.github.io/Alacarte/"
 Repository = "https://github.com/DANNHIROAKI/Alacarte-Rectgen"
 
 [tool.setuptools]

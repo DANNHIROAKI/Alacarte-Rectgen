@@ -4,11 +4,9 @@ A **controllable output-density** synthetic generator for **axis-aligned hyper-r
 
 It generates two box sets **R** and **S** such that the expected spatial-join output density is close to a user-specified target:
 
-$$
-\alpha_{\mathrm{out}} = \frac{|J(R,S)|}{|R| + |S|},
-\quad
-J(R,S) = \{(r,s)\in R\times S\;|\; r\cap s \neq \varnothing\}.
-$$
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\alpha_{\mathrm{out}}%20=%20\frac{|J(R,S)|}{|R|%20+%20|S|},%20\quad%20J(R,S)%20=%20\{(r,s)\in%20R\times%20S%20\mid%20r\cap%20s%20\neq%20\varnothing\}" alt="Alpha formula" />
+</div>
 
 ---
 
@@ -70,9 +68,11 @@ print(f"Intersection Prob:   {info['pair_intersection_prob_est']:.6e}")
 
 They store **half-open** boxes:
 
-$$
-\text{box}_i = \prod_{k} [\text{lower}_{i,k}, \text{upper}_{i,k})
-$$
+
+<div align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\text{box}_i%20=%20\prod_{k}%20[\text{lower}_{i,k},%20\text{upper}_{i,k})" alt="Box definition" />
+</div>
+
 
 Key fields/properties:
 
@@ -84,10 +84,10 @@ Key fields/properties:
 
 Common keys:
 
-- `info["coverage"]`: solved coverage $C$
-- `info["alpha_target"]`: requested target $\alpha_{out}$
-- `info["alpha_expected_est"]`: Monte-Carlo estimate of expected $\alpha_{out}$ under the tuned coverage
-- `info["pair_intersection_prob_est"]`: estimated pairwise intersection probability $p$
+- `info["coverage"]`: solved coverage `C`
+- `info["alpha_target"]`: requested target `alpha_out`
+- `info["alpha_expected_est"]`: Monte-Carlo estimate of expected `alpha_out` under the tuned coverage
+- `info["pair_intersection_prob_est"]`: estimated pairwise intersection probability `p`
 - `info["tune_history"]`: list of tried coverages + estimated alphas during tuning
 - `info["params"]`: echo of the main generation parameters
 
