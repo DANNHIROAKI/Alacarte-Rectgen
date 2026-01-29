@@ -4,11 +4,11 @@ A **controllable output-density** synthetic generator for **axis-aligned hyper-r
 
 It generates two box sets **R** and **S** such that the expected spatial-join output density is close to a user-specified target:
 
-\[
+$$
 \alpha_{\mathrm{out}} = \frac{|J(R,S)|}{|R| + |S|},
 \quad
 J(R,S) = \{(r,s)\in R\times S\;|\; r\cap s \neq \varnothing\}.
-\]
+$$
 
 ---
 
