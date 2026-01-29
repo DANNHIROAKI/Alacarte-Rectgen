@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alacarte-rectgen"  # distribution name on PyPI (pip install ...)
+version = "0.1.0"
+description = "Controllable output-density synthetic axis-aligned hyper-rectangle generator"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Dann Hiroaki", email = "Dann_Hiroaki@ieee.org" },
+]
+keywords = ["spatial", "benchmark", "synthetic-data", "rectangles", "boxes"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy>=1.17",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7",
+  "build",
+  "twine",
+  "ruff>=0.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/DANNHIROAKI/Alacarte-Rectgen"
+Repository = "https://github.com/DANNHIROAKI/Alacarte-Rectgen"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["alacarte_rectgen"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
