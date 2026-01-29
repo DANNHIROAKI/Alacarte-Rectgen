@@ -84,10 +84,10 @@ Key fields/properties:
 
 Common keys:
 
-- `info["coverage"]`: solved coverage \(C\)
-- `info["alpha_target"]`: requested target \(\alpha_{out}\)
-- `info["alpha_expected_est"]`: Monte-Carlo estimate of expected \(\alpha_{out}\) under the tuned coverage
-- `info["pair_intersection_prob_est"]`: estimated pairwise intersection probability \(p\)
+- `info["coverage"]`: solved coverage $C$
+- `info["alpha_target"]`: requested target $\alpha_{out}$
+- `info["alpha_expected_est"]`: Monte-Carlo estimate of expected $\alpha_{out}$ under the tuned coverage
+- `info["pair_intersection_prob_est"]`: estimated pairwise intersection probability $p$
 - `info["tune_history"]`: list of tried coverages + estimated alphas during tuning
 - `info["params"]`: echo of the main generation parameters
 
